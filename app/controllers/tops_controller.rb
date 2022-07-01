@@ -6,7 +6,7 @@ class TopsController < ApplicationController
   def create
     @top = Top.new(top_params)
     if @top.save
-      redirect_to root_path, notice: '名前を追加しました'
+      redirect_to questions_path, notice: '名前を追加しました'
     else
       flash.now[:notice] = '追加に失敗しました'
       render :new
