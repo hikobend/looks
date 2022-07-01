@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'tops/show'
-  root to: 'tops#show'
-  resources :questions, except: [:index]
+  root to: 'tops#new'
+  resources :questions
 end
