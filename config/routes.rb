@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root to: 'tops#new'
+  root to: 'tops#top'
   resources :questions
 end
