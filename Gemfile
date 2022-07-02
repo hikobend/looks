@@ -17,6 +17,10 @@ group :development do
   gem 'web-console', '>= 4.1.0'
   gem 'listen', '~> 3.3'
   gem 'spring'
+  gem 'rubocop', require: false
+  gem 'rubocop-performance', require: false
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
 end
 group :test do
   gem 'capybara', '>= 3.26'
