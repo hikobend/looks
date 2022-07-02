@@ -1,10 +1,7 @@
 class TopsController < ApplicationController
-  def top 
+  def show 
+    @top = Top.find(params[:id])
   end
-  
-  def index
-    @tops = Top.all
-  end 
 
   def new
     @top = Top.new
@@ -13,7 +10,7 @@ class TopsController < ApplicationController
   def create
     @top = Top.new(top_params)
     if @top.save
-      redirect_to questions_path
+      redirect_to top_path(@top)
     else
       render :new
     end
