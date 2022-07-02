@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class TopsController < ApplicationController
-  def show 
+  def show
     @top = Top.find(params[:id])
   end
 
@@ -18,7 +20,7 @@ class TopsController < ApplicationController
 
   private
 
-  def top_params
-    params.permit(:name)
-  end
+    def top_params
+      params.permit(:name)
+    end
 end
