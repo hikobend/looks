@@ -12,9 +12,11 @@ gem 'sass-rails', '>= 6'
 gem 'turbolinks', '~> 5'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'webpacker', '~> 5.0'
+
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
+
 group :development do
   gem 'listen', '~> 3.3'
   gem 'rubocop', require: false
@@ -24,6 +26,7 @@ group :development do
   gem 'spring'
   gem 'web-console', '>= 4.1.0'
 end
+
 group :test do
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver', '>= 4.0.0.rc1'
