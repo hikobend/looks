@@ -13,7 +13,7 @@ class TopsController < ApplicationController
   def create
     @top = Top.new(top_params)
     if @top.save
-      redirect_to tops_path
+      redirect_to questions_path
     else
       render :new
     end
