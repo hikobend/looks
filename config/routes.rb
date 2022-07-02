@@ -1,4 +1,8 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
-  root to: 'top#index'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root to: 'tops#top'
+  resources :tops
+  resources :questions
+  get 'tops/:id/answer', to: 'tops#answer'
 end

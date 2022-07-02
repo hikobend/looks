@@ -1,0 +1,21 @@
+<h3>名前を入力してください</h3>
+
+<%= form_with(modal: @top, url: tops_path, local: true) do |f| %>
+  
+  <div class="field-form">
+    <%= f.label :name, '名前' %>
+    <%= f.text_field :name, autofocus: true, placeholder: "名前" %>
+  </div>
+
+  <div class="field-form">
+    <%= f.radio_button :ques_one, '1' %>
+    <%= f.label :ques_one, "はい", {value: 1, style: "display: inline-block;"} %>
+    <%= f.radio_button :ques_one, '0' %>
+    <%= f.label :ques_one, "いいえ", {value: 0, style: "display: inline-block;"} %>
+  </div>
+
+  <div class="field-form">
+    <%= f.submit "作成" %>
+  </div>
+
+<% end %>
