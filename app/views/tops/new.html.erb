@@ -1,4 +1,6 @@
-<%= form_with(modal: @top, local: true) do |f| %>
+<h3>Adminの追加</h3>
+
+<%= form_with(modal: @top, url: tops_path, local: true) do |f| %>
   
   <div class="field-form">
     <%= f.label :name, '名前' %>
@@ -6,7 +8,7 @@
   </div>
 
   <div class="field-form">
-    <%= f.submit "質問へ" %>
+    <%= f.submit "作成" %>
   </div>
 
 <% end %>
