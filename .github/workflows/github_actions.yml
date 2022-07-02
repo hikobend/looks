@@ -19,7 +19,6 @@ on:
       - name: bundle install
         run: |
           docker-compose -f docker-compose-test.yml run --rm app bundle install --path vendor/bundle --jobs=4
-
       - name: rubocop checks
         run: |
           docker-compose -f docker-compose-test.yml run --rm app bundle exec rubocop
@@ -28,4 +27,3 @@ on:
           docker-compose -f docker-compose-test.yml run --rm app bundle exec rspec
         env:
           RAILS_ENV: test
-          
