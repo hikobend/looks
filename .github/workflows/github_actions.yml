@@ -5,7 +5,7 @@ on:
   #feature/をpushするとこのワークフローを実行するようにする
   push:
     branches:
-      - add/*
+      - 'add/*'
   pull_request:
     branches:
       - '*'
@@ -30,20 +30,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.4.2
 
-      - name: setup docker
-        run: |
-          docker-compose -f docker-compose-test.yml build
-
-      - name: bundle install
-        run: |
-          docker-compose -f docker-compose-test.yml run --rm app bundle install --path vendor/bundle --jobs=4
 
       - name: rubocop checks
         run: |
-          docker-compose -f docker-compose-test.yml run --rm app bundle exec rubocop
-
+          docker-compose run --rm qpp bundle exec rubocop
       - name: run rspec
         run: |
-          docker-compose -f docker-compose-test.yml run --rm app bundle exec rspec
-        env:
-          RAILS_ENV: test
+          docker-compose run --rm qpp bundle exec rspec
