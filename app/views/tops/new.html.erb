@@ -8,6 +8,14 @@
   </div>
 
   <div class="field-form">
+    <%= f.radio_button :ques_one, :yes %>
+    <%= f.label :ques_one, "はい", {value: :yes, style: "display: inline-block;"} %>
+    <%= f.radio_button :ques_one, :no %>
+    <%= f.label :ques_one, "いいえ", {value: :no, style: "display: inline-block;"} %>
+    
+  </div>
+
+  <div class="field-form">
     <%= f.submit "作成" %>
   </div>
 
