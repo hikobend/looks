@@ -1,0 +1,49 @@
+# ワークフロー名　rspec Robocopを導入
+name: Rspec & Robocop
+
+on:
+  #feature/をpushするとこのワークフローを実行するようにする
+  push:
+    branches:
+      - feature/*
+  pull_request:
+    branches:
+      - '*'
+# 実行するジョブを指定
+# feature/をpushするとjobsの内容が作動する
+jobs:
+  # buildという名前のジョブを定義
+  build:
+    # ubuntuの最新版で実行する 
+    runs-on: ubuntu-latest
+
+    # 実行するコマンドと処理内容を設定
+    # https://github.com/marketplace からとってきた？
+    steps:
+
+      #uses: github拡張機能を呼び出す
+      #name: runの名前
+      #run: ターミナルで呼び出す命令
+
+      # ソースコードのチェックアウト @v2はcheckoutのバージョンを指定している。2022/5/25の最新版は2.4.2
+      # git checkoutするより手間がかからない
+      - name: Checkout
+        uses: actions/checkout@v2.4.2
+
+      - name: setup docker
+        run: |
+          docker-compose -f docker-compose-test.yml build
+
+      - name: bundle install
+        run: |
+          docker-compose -f docker-compose-test.yml run --rm app bundle install --path vendor/bundle --jobs=4
+
+      - name: rubocop checks
+        run: |
+          docker-compose run --rm app bundle exec rubocop
+
+      - name: run rspec
+        run: |
+          docker-compose run --rm app bundle exec rspec
+        env:
+          RAILS_ENV: test
