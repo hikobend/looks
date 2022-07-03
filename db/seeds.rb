@@ -17,19 +17,19 @@ Answer.create!(id: 8, answer: '月')
 # 夜型 積極的 専門的 衝動的 真面目
 Answer.create!(id: 9, answer: 'アライグマ')
 # 夜型 積極的 専門的 衝動的 臨機応変
-Answer.create!(id: 10, answer: 'number10')
+Answer.create!(id: 10, answer: '反射板')
 # 夜型 積極的 専門的 計画的 真面目
 Answer.create!(id: 11, answer: '星')
 # 夜型 積極的 専門的 計画的 臨機応変
 Answer.create!(id: 12, answer: 'シーラカンス')
 # 夜型 積極的 器用的 衝動的 真面目
-Answer.create!(id: 13, answer: 'number13')
+Answer.create!(id: 13, answer: 'アンコウ')
 # 夜型 積極的 器用的 衝動的 臨機応変
-Answer.create!(id: 14, answer: 'number14')
+Answer.create!(id: 14, answer: '車')
 # 夜型 積極的 器用的 計画的 真面目
-Answer.create!(id: 15, answer: 'number15')
+Answer.create!(id: 15, answer: '温泉')
 # 夜型 積極的 器用的 計画的 臨機応変
-Answer.create!(id: 16, answer: 'number16')
+Answer.create!(id: 16, answer: '飛行機')
 
 # 朝型 消極的 専門的 衝動的 真面目
 Answer.create!(id: 17, answer: '照明')
@@ -76,3 +76,4 @@ Answer.create!(id: 32, answer: 'number32')
 # スマートフォン
 # イルカ
 # 接着剤
+# レモン
