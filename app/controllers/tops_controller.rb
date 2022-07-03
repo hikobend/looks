@@ -3,6 +3,7 @@
 class TopsController < ApplicationController
   def show
     @top = Top.find(params[:id])
+    @answers = Answer.all
   end
 
   def new
