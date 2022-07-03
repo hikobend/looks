@@ -15,6 +15,10 @@ ActiveRecord::Schema.define(version: 2022_07_01_122916) do
   create_table "tops", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.boolean "ques_one"
+    t.boolean "ques_two"
+    t.boolean "ques_three"
+    t.boolean "ques_four"
+    t.boolean "ques_five"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
