@@ -23,6 +23,15 @@
     <%= f.label :ques_two, "いいえ(聞く方が好き)", {value: 0, style: "display: inline-block;"} %>
   </div>
   
+
+  <div class="field-form">
+    <p>人付き合いは、「広く浅く」より「狭く深く」である。</p>
+    <%= f.radio_button :ques_three, '1' %>
+    <%= f.label :ques_three, "はい(狭く深く)", {value: 1, style: "display: inline-block;"} %>
+    <%= f.radio_button :ques_three, '0' %>
+    <%= f.label :ques_three, "いいえ(広く浅く)", {value: 0, style: "display: inline-block;"} %>
+  </div>
+  
   <div class="field-form">
     <%= f.submit "作成" %>
   </div>
