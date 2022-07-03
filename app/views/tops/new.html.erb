@@ -33,6 +33,14 @@
   </div>
   
   <div class="field-form">
+    <p>行動をする時は、計画を立てる</p>
+    <%= f.radio_button :ques_four, '1' %>
+    <%= f.label :ques_four, "はい(行動をするときは計画を立てる)", {value: 1, style: "display: inline-block;"} %>
+    <%= f.radio_button :ques_four, '0' %>
+    <%= f.label :ques_four, "いいえ(行動をするときは計画を立てない)", {value: 0, style: "display: inline-block;"} %>
+  </div>
+
+  <div class="field-form">
     <%= f.submit "作成" %>
   </div>
 
