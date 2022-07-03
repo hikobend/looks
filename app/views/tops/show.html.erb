@@ -1,2 +1,7 @@
 <%= @top.name %> さんを「もの」に例えると...
+
 <p>●●です!!</p>
+
+<% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == true && @top.ques_four == true && @top.ques_five == true %>
+  a
+<% end %>
