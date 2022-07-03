@@ -3,7 +3,7 @@ Answer.create!(id: 1, answer: 'number1')
 # 夜型 消極的 専門的 衝動的 冷静
 Answer.create!(id: 2, answer: 'number2')
 # 夜型 消極的 専門的 計画的 真面目
-Answer.create!(id: 3, answer: '電柱')
+Answer.create!(id: 3, answer: '街灯')
 # 夜型 消極的 専門的 計画的 冷静
 Answer.create!(id: 4, answer: 'number4')
 # 夜型 消極的 計画的 衝動的 真面目
