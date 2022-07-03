@@ -1,3 +1,3 @@
 32.times do |i|
-  Answer.create!(answer: "#{i+1}")
+  Answer.create!(answer: "number#{i+1}")
 end
