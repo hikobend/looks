@@ -21,6 +21,6 @@ class TopsController < ApplicationController
   private
 
     def top_params
-      params.permit(:name, :ques_one)
+      params.permit(:name, :ques_one, :ques_two, :ques_three, :ques_four, :ques_five)
     end
 end
