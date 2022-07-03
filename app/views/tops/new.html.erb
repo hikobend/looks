@@ -10,11 +10,19 @@
   <div class="field-form">
     <p>私は朝型より夜型である</p>
     <%= f.radio_button :ques_one, '1' %>
-    <%= f.label :ques_one, "はい", {value: 1, style: "display: inline-block;"} %>
+    <%= f.label :ques_one, "はい(夜型)", {value: 1, style: "display: inline-block;"} %>
     <%= f.radio_button :ques_one, '0' %>
-    <%= f.label :ques_one, "いいえ", {value: 0, style: "display: inline-block;"} %>
+    <%= f.label :ques_one, "いいえ(朝型)", {value: 0, style: "display: inline-block;"} %>
   </div>
 
+  <div class="field-form">
+    <p>私は話をする時、話を聞くより話をする方が好きだ。</p>
+    <%= f.radio_button :ques_two, '1' %>
+    <%= f.label :ques_two, "はい(話をする方が好き)", {value: 1, style: "display: inline-block;"} %>
+    <%= f.radio_button :ques_two, '0' %>
+    <%= f.label :ques_two, "いいえ(聞く方が好き)", {value: 0, style: "display: inline-block;"} %>
+  </div>
+  
   <div class="field-form">
     <%= f.submit "作成" %>
   </div>
