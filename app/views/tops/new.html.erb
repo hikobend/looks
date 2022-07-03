@@ -8,7 +8,7 @@
   </div>
 
   <div class="field-form">
-    <p>私は朝型より夜型である</p>
+    <p>朝型より夜型である</p>
     <%= f.radio_button :ques_one, '1' %>
     <%= f.label :ques_one, "はい(夜型)", {value: 1, style: "display: inline-block;"} %>
     <%= f.radio_button :ques_one, '0' %>
@@ -38,6 +38,14 @@
     <%= f.label :ques_four, "はい(行動をするときは計画を立てる)", {value: 1, style: "display: inline-block;"} %>
     <%= f.radio_button :ques_four, '0' %>
     <%= f.label :ques_four, "いいえ(行動をするときは計画を立てない)", {value: 0, style: "display: inline-block;"} %>
+  </div>
+
+  <div class="field-form">
+    <p>臨機応変に対応できる</p>
+    <%= f.radio_button :ques_five, '1' %>
+    <%= f.label :ques_five, "はい(臨機応変に対応で着る)", {value: 1, style: "display: inline-block;"} %>
+    <%= f.radio_button :ques_five, '0' %>
+    <%= f.label :ques_five, "いいえ(臨機応変に対応できない)", {value: 0, style: "display: inline-block;"} %>
   </div>
 
   <div class="field-form">
