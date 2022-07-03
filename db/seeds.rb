@@ -62,3 +62,19 @@ Answer.create!(id: 30, answer: 'number30')
 Answer.create!(id: 31, answer: 'number31')
 # 朝型 積極的 器用的 計画的 冷静
 Answer.create!(id: 32, answer: 'number32')
+
+# 照明
+# 飛行機
+# 車
+# クッション
+# エアコン
+# 空気清浄機
+# 安陽植物
+# もち
+# 時計
+# スマートフォン
+# フクロウ
+# イルカ
+# アライグマ
+# カバ
+# オーロラ
