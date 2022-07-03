@@ -39,7 +39,7 @@ Answer.create!(id: 19, answer: 'number19')
 # 朝型 消極的 専門的 計画的 冷静
 Answer.create!(id: 20, answer: 'number20')
 # 朝型 消極的 計画的 衝動的 真面目
-Answer.create!(id: 11, answer: 'number21')
+Answer.create!(id: 21, answer: 'number21')
 # 朝型 消極的 計画的 衝動的 冷静
 Answer.create!(id: 22, answer: 'number22')
 # 朝型 消極的 計画的 計画的 真面目
