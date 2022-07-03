@@ -1,35 +1,36 @@
 # 夜型 消極的 専門的 衝動的 真面目
 Answer.create!(id: 1, answer: 'オーロラ')
 # 夜型 消極的 専門的 衝動的 臨機応変
-Answer.create!(id: 2, answer: 'number2')
+Answer.create!(id: 2, answer: '流れ星')
 # 夜型 消極的 専門的 計画的 真面目
 Answer.create!(id: 3, answer: '街灯')
 # 夜型 消極的 専門的 計画的 臨機応変
 Answer.create!(id: 4, answer: '月')
 # 夜型 消極的 器用的 衝動的 真面目
-Answer.create!(id: 5, answer: 'number5')
+Answer.create!(id: 5, answer: 'コウモリ')
 # 夜型 消極的 器用的 衝動的 臨機応変
-Answer.create!(id: 6, answer: 'number6')
+Answer.create!(id: 6, answer: '夜光貝')
 # 夜型 消極的 器用的 計画的 真面目
 Answer.create!(id: 7, answer: 'フクロウ')
 # 夜型 消極的 器用的 計画的 臨機応変
 Answer.create!(id: 8, answer: '月')
 # 夜型 積極的 専門的 衝動的 真面目
-Answer.create!(id: 9, answer: 'number9')
+Answer.create!(id: 9, answer: 'アライグマ')
 # 夜型 積極的 専門的 衝動的 臨機応変
 Answer.create!(id: 10, answer: 'number10')
 # 夜型 積極的 専門的 計画的 真面目
-Answer.create!(id: 11, answer: 'number11')
+Answer.create!(id: 11, answer: '星')
 # 夜型 積極的 専門的 計画的 臨機応変
-Answer.create!(id: 12, answer: 'number12')
+Answer.create!(id: 12, answer: 'シーラカンス')
 # 夜型 積極的 器用的 衝動的 真面目
 Answer.create!(id: 13, answer: 'number13')
-# 夜型 積極的 器用的 衝動的 臨機応変n
+# 夜型 積極的 器用的 衝動的 臨機応変
 Answer.create!(id: 14, answer: 'number14')
 # 夜型 積極的 器用的 計画的 真面目
 Answer.create!(id: 15, answer: 'number15')
 # 夜型 積極的 器用的 計画的 臨機応変
 Answer.create!(id: 16, answer: 'number16')
+
 # 朝型 消極的 専門的 衝動的 真面目
 Answer.create!(id: 17, answer: '照明')
 # 朝型 消極的 専門的 衝動的 臨機応変
@@ -74,5 +75,4 @@ Answer.create!(id: 32, answer: 'number32')
 # 時計
 # スマートフォン
 # イルカ
-# アライグマ
 # 接着剤
