@@ -3,19 +3,19 @@
 <p>●●です!!</p>
 
 <%# 00000 %>
-<% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == true && @top.ques_four == true && @top.ques_five == true %>
+<% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == false && @top.ques_four == false && @top.ques_five == false %>
   <% @answers.each do |answer| %>
     <% if answer.id == 1 %> 
-    apple
+      <%= answer.answer %>
     <% end %>
   <% end %>
 <% end %>
 
 <%# 00001 %>
-<% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == true && @top.ques_four == true && @top.ques_five == false %>
+<% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == false && @top.ques_four == false && @top.ques_five == true %>
   <% @answers.each do |answer| %>
     <% if answer.id == 2 %> 
-      banana
+      <%= answer.answer %>
     <% end %>
   <% end %>
 <% end %>
