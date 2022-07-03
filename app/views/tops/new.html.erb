@@ -8,6 +8,7 @@
   </div>
 
   <div class="field-form">
+    <%# 朝型 or  夜型 %>
     <p>朝型である</p>
     <%= f.radio_button :ques_one, true %>
     <%= f.label :ques_one, "はい(朝型)", {value: true, style: "display: inline-block;"} %>
@@ -16,6 +17,7 @@
   </div>
 
   <div class="field-form">
+    <%# 積極的 or 消極的 %>
     <p>話をする方が好きだ。</p>
     <%= f.radio_button :ques_two, '1' %>
     <%= f.label :ques_two, "はい(話をする方が好き)", {value: 1, style: "display: inline-block;"} %>
@@ -24,14 +26,16 @@
   </div>
 
   <div class="field-form">
+    <%# 器用的 or 専目的 %>
     <p>人付き合いは、「広く浅く」である。</p>
     <%= f.radio_button :ques_three, '1' %>
-    <%= f.label :ques_three, "はい(狭く深く)", {value: 1, style: "display: inline-block;"} %>
+    <%= f.label :ques_three, "はい(広く浅く)", {value: 1, style: "display: inline-block;"} %>
     <%= f.radio_button :ques_three, '0' %>
-    <%= f.label :ques_three, "いいえ(広く浅く)", {value: 0, style: "display: inline-block;"} %>
+    <%= f.label :ques_three, "いいえ(狭く深く)", {value: 0, style: "display: inline-block;"} %>
   </div>
   
   <div class="field-form">
+    <%# 計画的 or 衝動的 %>
     <p>行動は計画的である。</p>
     <%= f.radio_button :ques_four, '1' %>
     <%= f.label :ques_four, "はい(計画的に行動する)", {value: 1, style: "display: inline-block;"} %>
@@ -40,11 +44,12 @@
   </div>
 
   <div class="field-form">
+    <%# 冷静 or 真面目 %>
     <p>臨機応変に対応できる</p>
     <%= f.radio_button :ques_five, '1' %>
     <%= f.label :ques_five, "はい(臨機応変に対応できる)", {value: 1, style: "display: inline-block;"} %>
     <%= f.radio_button :ques_five, '0' %>
-    <%= f.label :ques_five, "いいえ(臨機応変に対応するのは苦手)", {value: 0, style: "display: inline-block;"} %>
+    <%= f.label :ques_five, "いいえ(計画に忠実)", {value: 0, style: "display: inline-block;"} %>
   </div>
 
   <div class="field-form">
