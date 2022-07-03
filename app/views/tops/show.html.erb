@@ -3,5 +3,17 @@
 <p>●●です!!</p>
 
 <% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == true && @top.ques_four == true && @top.ques_five == true %>
-  a
+  <% @answers.each do |answer| %>
+    <% if answer.id == 1 %> 
+    apple
+    <% end %>
+  <% end %>
+<% end %>
+
+<% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == true && @top.ques_four == true && @top.ques_five == false %>
+  <% @answers.each do |answer| %>
+    <% if answer.id == 2 %> 
+      banana
+    <% end %>
+  <% end %>
 <% end %>
