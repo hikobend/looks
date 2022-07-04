@@ -1,5 +1,5 @@
 <div class="top-show">
-  <h1 class="top-new-title"><%= @top.name %> さんを「もの」に例えると...</h1>
+  <h1 class="top-new-title"><%= @top.name %> さんを「<span class="strong">もの</span>」に例えると...</h1>
     <div class="top-show-body">
     <% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == false && @top.ques_four == false && @top.ques_five == false %>
       <% @answers.each do |answer| %>
