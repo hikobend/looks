@@ -2,7 +2,7 @@
 
 FactoryBot.define do
   factory :top do
-    name { Gimei.name.first.kanji + Gimei.name.last.kanji }
+    name { Gimei.name.last.kanji + Gimei.name.first.kanji }
     ques_one { true }
     ques_two { true }
     ques_three { true }
