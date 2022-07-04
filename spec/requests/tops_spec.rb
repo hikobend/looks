@@ -28,6 +28,17 @@ RSpec.describe 'admin/admin', type: :request do
     end
   end
 
+  describe 'GET top/show' do
+    subject(:request) { get(top_path(top_id)) }
+
+    context 'ページを開く' do
+      it 'トップページを開く' do
+        request
+        expect(response).to have_http_status(:ok)
+      end
+    end
+  end
+
   # describe 'GET #show' do
   #   subject(:request) { get(admin_admin_path(admin_id)) }
 
