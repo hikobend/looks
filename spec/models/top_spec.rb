@@ -67,10 +67,10 @@ RSpec.describe Top, type: :model do
         end
       end
     end
-    
+
     describe 'ques_one' do
       context '入力された値がtrue' do
-        subject(:top) { build(:top, ques_one: true ) }
+        subject(:top) { build(:top, ques_one: true) }
 
         it 'データを保存する' do
           expect(top.valid?).to eq true
@@ -78,7 +78,7 @@ RSpec.describe Top, type: :model do
       end
 
       context '入力された値がfalse' do
-        subject(:top) { build(:top, ques_one: false ) }
+        subject(:top) { build(:top, ques_one: false) }
 
         it 'データを保存する' do
           expect(top.valid?).to eq true
@@ -96,7 +96,7 @@ RSpec.describe Top, type: :model do
 
     describe 'ques_two' do
       context '入力された値がtrue' do
-        subject(:top) { build(:top, ques_two: true ) }
+        subject(:top) { build(:top, ques_two: true) }
 
         it 'データを保存する' do
           expect(top.valid?).to eq true
@@ -104,7 +104,7 @@ RSpec.describe Top, type: :model do
       end
 
       context '入力された値がfalse' do
-        subject(:top) { build(:top, ques_two: false ) }
+        subject(:top) { build(:top, ques_two: false) }
 
         it 'データを保存する' do
           expect(top.valid?).to eq true
@@ -122,7 +122,7 @@ RSpec.describe Top, type: :model do
 
     describe 'ques_three' do
       context '入力された値がtrue' do
-        subject(:top) { build(:top, ques_three: true ) }
+        subject(:top) { build(:top, ques_three: true) }
 
         it 'データを保存する' do
           expect(top.valid?).to eq true
@@ -130,7 +130,7 @@ RSpec.describe Top, type: :model do
       end
 
       context '入力された値がfalse' do
-        subject(:top) { build(:top, ques_three: false ) }
+        subject(:top) { build(:top, ques_three: false) }
 
         it 'データを保存する' do
           expect(top.valid?).to eq true
@@ -146,10 +146,9 @@ RSpec.describe Top, type: :model do
       end
     end
 
-
     describe 'ques_four' do
       context '入力された値がtrue' do
-        subject(:top) { build(:top, ques_four: true ) }
+        subject(:top) { build(:top, ques_four: true) }
 
         it 'データを保存する' do
           expect(top.valid?).to eq true
@@ -157,7 +156,7 @@ RSpec.describe Top, type: :model do
       end
 
       context '入力された値がfalse' do
-        subject(:top) { build(:top, ques_four: false ) }
+        subject(:top) { build(:top, ques_four: false) }
 
         it 'データを保存する' do
           expect(top.valid?).to eq true
@@ -172,9 +171,10 @@ RSpec.describe Top, type: :model do
         end
       end
     end
+
     describe 'ques_five' do
       context '入力された値がtrue' do
-        subject(:top) { build(:top, ques_five: true ) }
+        subject(:top) { build(:top, ques_five: true) }
 
         it 'データを保存する' do
           expect(top.valid?).to eq true
@@ -182,7 +182,7 @@ RSpec.describe Top, type: :model do
       end
 
       context '入力された値がfalse' do
-        subject(:top) { build(:top, ques_five: false ) }
+        subject(:top) { build(:top, ques_five: false) }
 
         it 'データを保存する' do
           expect(top.valid?).to eq true
