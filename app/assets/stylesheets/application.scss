@@ -50,28 +50,6 @@ body {
   margin: 0 auto;
   padding: 100px 20px 1000px;
 }
-._a {
-  max-width: 300px;
-  margin: 0 auto;  
-
-  a { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 2.0em 1.0em;
-    border: 1px solid #222222;
-    background: linear-gradient(to right, #ffffff 50%, #222222 50%);
-    background-size: 200% auto;
-    color: #222222;
-    font-size: 12px;
-    text-decoration: none;
-    text-align: center;
-    transition: .3s;
-    position: relative;
-  }
-}
-
 
 .top{
   margin: 400px 30px;
@@ -114,6 +92,10 @@ body {
 
   .top-body{
     margin: 50px 0;
+    
+    .form-control{
+      margin: 20px 0;
+    }
   }
 
   .field-form{
