@@ -62,4 +62,4 @@ Answer.create!(id: 30, answer: 'スマートフォン')
 # 朝型 積極的 器用的 計画的 真面目
 Answer.create!(id: 31, answer: '電車')
 # 朝型 積極的 器用的 計画的 臨機応変
-Answer.create!(id: 32, answer: '郵便')
+Answer.create!(id: 32, answer: 'スーパーマン')
