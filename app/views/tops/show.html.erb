@@ -1,293 +1,263 @@
-<%= @top.name %> さんを「もの」に例えると...
-
-
-
-<%# 00000 %>
-<% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == false && @top.ques_four == false && @top.ques_five == false %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 1 %> 
-      <p><%= answer.answer %>です!!</p>
+<div class="top-show">
+  <h1 class="top-new-title"><%= @top.name %> さんを「もの」に例えると...</h1>
+    <div class="top-show-body">
+    <% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == false && @top.ques_four == false && @top.ques_five == false %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 1 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 00001 %>
-<% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == false && @top.ques_four == false && @top.ques_five == true %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 2 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == false && @top.ques_four == false && @top.ques_five == true %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 2 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 00010 %>
-<% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == false && @top.ques_four == true && @top.ques_five == false %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 3 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == false && @top.ques_four == true && @top.ques_five == false %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 3 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 00011 %>
-<% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == false && @top.ques_four == true && @top.ques_five == true %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 4 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == false && @top.ques_four == true && @top.ques_five == true %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 4 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 00100 %>
-<% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == true && @top.ques_four == false && @top.ques_five == false %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 5 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == true && @top.ques_four == false && @top.ques_five == false %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 5 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 00101 %>
-<% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == true && @top.ques_four == false && @top.ques_five == true %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 6 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == true && @top.ques_four == false && @top.ques_five == true %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 6 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 00110 %>
-<% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == true && @top.ques_four == true && @top.ques_five == false %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 7 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == true && @top.ques_four == true && @top.ques_five == false %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 7 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 00111 %>
-<% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == true && @top.ques_four == true && @top.ques_five == true %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 8 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == false && @top.ques_two == false && @top.ques_three == true && @top.ques_four == true && @top.ques_five == true %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 8 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 01000 %>
-<% if @top.ques_one == false && @top.ques_two == true && @top.ques_three == false && @top.ques_four == false && @top.ques_five == false %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 9 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == false && @top.ques_two == true && @top.ques_three == false && @top.ques_four == false && @top.ques_five == false %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 9 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 01001 %>
-<% if @top.ques_one == false && @top.ques_two == true && @top.ques_three == false && @top.ques_four == false && @top.ques_five == true %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 10 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == false && @top.ques_two == true && @top.ques_three == false && @top.ques_four == false && @top.ques_five == true %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 10 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 01010 %>
-<% if @top.ques_one == false && @top.ques_two == true && @top.ques_three == false && @top.ques_four == true && @top.ques_five == false %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 11 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == false && @top.ques_two == true && @top.ques_three == false && @top.ques_four == true && @top.ques_five == false %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 11 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 01011 %>
-<% if @top.ques_one == false && @top.ques_two == true && @top.ques_three == false && @top.ques_four == true && @top.ques_five == true %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 12 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == false && @top.ques_two == true && @top.ques_three == false && @top.ques_four == true && @top.ques_five == true %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 12 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 01100 %>
-<% if @top.ques_one == false && @top.ques_two == true && @top.ques_three == true && @top.ques_four == false && @top.ques_five == false %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 13 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == false && @top.ques_two == true && @top.ques_three == true && @top.ques_four == false && @top.ques_five == false %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 13 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 01101 %>
-<% if @top.ques_one == false && @top.ques_two == true && @top.ques_three == true && @top.ques_four == false && @top.ques_five == true %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 14 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == false && @top.ques_two == true && @top.ques_three == true && @top.ques_four == false && @top.ques_five == true %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 14 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 01110 %>
-<% if @top.ques_one == false && @top.ques_two == true && @top.ques_three == true && @top.ques_four == true && @top.ques_five == false %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 15 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == false && @top.ques_two == true && @top.ques_three == true && @top.ques_four == true && @top.ques_five == false %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 15 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 01111 %>
-<% if @top.ques_one == false && @top.ques_two == true && @top.ques_three == true && @top.ques_four == true && @top.ques_five == true %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 16 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == false && @top.ques_two == true && @top.ques_three == true && @top.ques_four == true && @top.ques_five == true %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 16 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 10000 %>
-<% if @top.ques_one == true && @top.ques_two == false && @top.ques_three == false && @top.ques_four == false && @top.ques_five == false %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 17 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == true && @top.ques_two == false && @top.ques_three == false && @top.ques_four == false && @top.ques_five == false %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 17 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 10001 %>
-<% if @top.ques_one == true && @top.ques_two == false && @top.ques_three == false && @top.ques_four == false && @top.ques_five == true %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 18 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == true && @top.ques_two == false && @top.ques_three == false && @top.ques_four == false && @top.ques_five == true %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 18 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 10010 %>
-<% if @top.ques_one == true && @top.ques_two == false && @top.ques_three == false && @top.ques_four == true && @top.ques_five == false %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 19 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == true && @top.ques_two == false && @top.ques_three == false && @top.ques_four == true && @top.ques_five == false %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 19 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 10011 %>
-<% if @top.ques_one == true && @top.ques_two == false && @top.ques_three == false && @top.ques_four == true && @top.ques_five == true %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 20 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == true && @top.ques_two == false && @top.ques_three == false && @top.ques_four == true && @top.ques_five == true %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 20 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 10100 %>
-<% if @top.ques_one == true && @top.ques_two == false && @top.ques_three == true && @top.ques_four == false && @top.ques_five == false %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 21 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == true && @top.ques_two == false && @top.ques_three == true && @top.ques_four == false && @top.ques_five == false %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 21 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 10101 %>
-<% if @top.ques_one == true && @top.ques_two == false && @top.ques_three == true && @top.ques_four == false && @top.ques_five == true %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 22 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == true && @top.ques_two == false && @top.ques_three == true && @top.ques_four == false && @top.ques_five == true %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 22 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 10110 %>
-<% if @top.ques_one == true && @top.ques_two == false && @top.ques_three == true && @top.ques_four == true && @top.ques_five == false %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 23 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == true && @top.ques_two == false && @top.ques_three == true && @top.ques_four == true && @top.ques_five == false %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 23 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 10111 %>
-<% if @top.ques_one == true && @top.ques_two == false && @top.ques_three == true && @top.ques_four == true && @top.ques_five == true %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 24 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == true && @top.ques_two == false && @top.ques_three == true && @top.ques_four == true && @top.ques_five == true %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 24 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 11000 %>
-<% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == false && @top.ques_four == false && @top.ques_five == false %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 25 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == false && @top.ques_four == false && @top.ques_five == false %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 25 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 11001 %>
-<% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == false && @top.ques_four == false && @top.ques_five == true %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 26 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == false && @top.ques_four == false && @top.ques_five == true %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 26 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 11010 %>
-<% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == false && @top.ques_four == true && @top.ques_five == false %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 27 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == false && @top.ques_four == true && @top.ques_five == false %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 27 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 11011 %>
-<% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == false && @top.ques_four == true && @top.ques_five == true %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 28 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == false && @top.ques_four == true && @top.ques_five == true %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 28 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 11100 %>
-<% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == true && @top.ques_four == false && @top.ques_five == false %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 29 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == true && @top.ques_four == false && @top.ques_five == false %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 29 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 11101 %>
-<% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == true && @top.ques_four == false && @top.ques_five == true %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 30 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == true && @top.ques_four == false && @top.ques_five == true %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 30 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 11110 %>
-<% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == true && @top.ques_four == true && @top.ques_five == false %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 31 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == true && @top.ques_four == true && @top.ques_five == false %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 31 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
 
-<%# 11111 %>
-<% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == true && @top.ques_four == true && @top.ques_five == true %>
-  <% @answers.each do |answer| %>
-    <% if answer.id == 32 %> 
-      <p><%= answer.answer %>です!!</p>
+    <% if @top.ques_one == true && @top.ques_two == true && @top.ques_three == true && @top.ques_four == true && @top.ques_five == true %>
+      <% @answers.each do |answer| %>
+        <% if answer.id == 32 %> 
+          <p><span class="top-answer"><%= answer.answer %></span>です!!</p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
-
-<%= link_to '最初の画面へ', root_path %>
+  </div>
+  <div class="top-link d-grid gap-2">
+    <%= link_to '最初の画面へ', root_path, class: 'nextpage btn btn-primary btn-lg' %>
+  </div>
+</div>

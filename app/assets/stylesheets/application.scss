@@ -102,3 +102,19 @@ body {
     margin: 60px 0;
   }
 }
+
+.top-show{
+  margin: 100px 30px;
+  text-align: center;
+
+  .top-show-body{
+    font-size: 30px;
+    margin: 100px 0px;
+
+    .top-answer{
+      font-weight: bold;
+      font-size: 100px;
+      flood-color: red;
+    }
+  }
+}
