@@ -14,8 +14,28 @@
 
   @import "bootstrap";
 
+body{
+  background-color: rgb(187, 241, 187);
+}
+
 
 .top{
   margin: 400px 30px;
   text-align: center;
+
+  h1{
+    font-size: 60px;
+    margin: 30px 10px;
+
+    .strong{
+      color: red;
+    }
+  }
+
+  h2{
+    font-size: 40px;
+    margin: 50px 30px;
+  }
+
+  
 }
