@@ -15,44 +15,17 @@ RSpec.describe 'admin/admin', type: :request do
         expect(response).to have_http_status(:ok)
       end
     end
+  end
 
-    # context 'Adminでログインしている場合' do
-    #   before { @admin = create(:admin) }
+  describe 'GET top/new' do
+    subject(:request) { get(new_top_path) }
 
-    #   it 'リクエストが成功する' do
-    #     sign_in @admin
-    #     request
-    #     expect(response).to have_http_status(:ok)
-    #   end
-
-    #   it 'name が表示されている' do
-    #     sign_in @admin
-    #     request
-    #     expect(response.body).to include(*Admin.pluck(:name))
-    #   end
-    # end
-
-    # context 'Operatorでログインしている場合' do
-    #   before { @operator = create(:operator) }
-
-    #   it 'リダイレクトする' do
-    #     sign_in @operator
-    #     request
-    #     expect(response).to have_http_status(:found)
-    #     expect(response).to redirect_to admin_session_path
-    #   end
-    # end
-
-    # context 'Userでログインしている場合' do
-    #   before { @user = create(:user) }
-
-    #   it 'リダイレクトする' do
-    #     sign_in @user
-    #     request
-    #     expect(response).to have_http_status(:found)
-    #     expect(response).to redirect_to admin_session_path
-    #   end
-    # end
+    context 'ページを開く' do
+      it 'トップページを開く' do
+        request
+        expect(response).to have_http_status(:ok)
+      end
+    end
   end
 
   # describe 'GET #show' do
