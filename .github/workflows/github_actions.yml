@@ -44,6 +44,6 @@ jobs:
 
       - name: run rspec
         run: |
-          docker-compose -f docker-compose-test.yml run --rm app bundle exec rspec
+          docker-compose run --rm app bundle exec rspec
         env:
           RAILS_ENV: test
