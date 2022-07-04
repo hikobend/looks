@@ -10,4 +10,3 @@ FactoryBot.define do
     ques_five { true }
   end
 end
-
