@@ -172,6 +172,30 @@ RSpec.describe Top, type: :model do
         end
       end
     end
+    describe 'ques_five' do
+      context '入力された値がtrue' do
+        subject(:top) { build(:top, ques_five: true ) }
 
+        it 'データを保存する' do
+          expect(top.valid?).to eq true
+        end
+      end
+
+      context '入力された値がfalse' do
+        subject(:top) { build(:top, ques_five: false ) }
+
+        it 'データを保存する' do
+          expect(top.valid?).to eq true
+        end
+      end
+
+      context '入力された値がnil' do
+        subject(:top) { build(:top, ques_five: nil) }
+
+        it 'データを保存する' do
+          expect(top.valid?).to eq false
+        end
+      end
+    end
   end
 end
