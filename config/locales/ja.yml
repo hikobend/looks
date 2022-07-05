@@ -1,5 +1,13 @@
 ja:
   activerecord:
+    attributes:
+      top:
+        name: 名前
+        ques_one: 1
+        ques_two: 2
+        ques_three: 3
+        ques_four: 4
+        ques_five: 5
     errors:
       messages:
         record_invalid: 'バリデーションに失敗しました: %{errors}'
