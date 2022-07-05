@@ -29,7 +29,6 @@ RSpec.describe Answer, type: :model do
 
         it '保存ができない' do
           expect(answer.valid?).to eq false
-          expect(answer.errors.messages[:answer]).to include "can't be blank"
         end
       end
 
@@ -39,7 +38,6 @@ RSpec.describe Answer, type: :model do
         it '保存できない' do
           answer = FactoryBot.build(:answer, answer: nil)
           expect(answer.valid?).to eq false
-          expect(answer.errors.messages[:answer]).to include "can't be blank"
         end
       end
 
