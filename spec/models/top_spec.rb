@@ -29,7 +29,6 @@ RSpec.describe Top, type: :model do
 
         it '保存ができない' do
           expect(top.valid?).to eq false
-          expect(top.errors.messages[:name]).to include "can't be blank"
         end
       end
 
@@ -39,7 +38,6 @@ RSpec.describe Top, type: :model do
         it '保存できない' do
           top = FactoryBot.build(:top, name: nil)
           expect(top.valid?).to eq false
-          expect(top.errors.messages[:name]).to include "can't be blank"
         end
       end
 
