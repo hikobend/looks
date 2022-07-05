@@ -3,7 +3,7 @@
 class Top < ApplicationRecord
   validates :name, length: { in: 1..60, allow_blank: true }
   validate :name_presence
-  validate :ques_one_inclusion
+  validates :ques_one, inclusion: { in:[true, false], message: "1つ目の質問に回答してください" }
   validate :ques_two_inclusion
   validate :ques_three_inclusion
   validate :ques_four_inclusion
@@ -15,12 +15,6 @@ class Top < ApplicationRecord
       return if name.present?
 
       errors.add(:base, '名前を入力してください.')
-    end
-
-    def ques_one_inclusion
-      return if ques_one.present?
-
-      errors.add(:base, '1つ目の質問に回答してください')
     end
 
     def ques_two_inclusion
