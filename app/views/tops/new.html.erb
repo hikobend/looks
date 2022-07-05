@@ -1,6 +1,6 @@
 <% if @top.errors.any? %>
   <div class="alert alert-danger" role="alert">
-    <h4 class="alert-heading"><%= pluralize(@top.errors.count, "個のエラーがあります") %></h4>
+    <h4 class="alert-heading"><%= @top.errors.count %>個のエラーがあります</h4>
     <hr>
     <p class="mb-0">
       <% @top.errors.full_messages.each do |message| %>
@@ -20,7 +20,7 @@
       </div>
 
       <div class="field-form">
-        <p class=question>朝型である</p>
+        <p class=question>1. 朝型である</p>
         <%= f.radio_button :ques_one, true %>
         <%= f.label :ques_one, "はい(朝型)", {value: true, style: "display: inline-block;", class:"fs-5"} %>
         <%= f.radio_button :ques_one, false %>
@@ -28,7 +28,7 @@
       </div>
 
       <div class="field-form">
-        <p class=question>話をする方が好きだ。</p>
+        <p class=question>2. 話をする方が好きだ。</p>
         <%= f.radio_button :ques_two, '1' %>
         <%= f.label :ques_two, "はい(話し手になるが好き)", {value: 1, style: "display: inline-block;", class:"fs-5"} %>
         <%= f.radio_button :ques_two, '0' %>
@@ -36,7 +36,7 @@
       </div>
 
       <div class="field-form">
-        <p class=question>人付き合いは、「広く浅く」である。</p>
+        <p class=question>3. 人付き合いは、「広く浅く」である。</p>
         <%= f.radio_button :ques_three, '1' %>
         <%= f.label :ques_three, "はい(交友関係は広く浅く)", {value: 1, style: "display: inline-block;", class:"fs-5"} %>
         <%= f.radio_button :ques_three, '0' %>
@@ -44,7 +44,7 @@
       </div>
       
       <div class="field-form">
-        <p class=question>行動は計画的である。</p>
+        <p class=question>4. 行動は計画的である。</p>
         <%= f.radio_button :ques_four, '1' %>
         <%= f.label :ques_four, "はい(計画してから行動する)", {value: 1, style: "display: inline-block;", class:"fs-5"} %>
         <%= f.radio_button :ques_four, '0' %>
@@ -52,7 +52,7 @@
       </div>
 
       <div class="field-form">
-        <p class=question>臨機応変に対応できる</p>
+        <p class=question>5. 臨機応変に対応できる</p>
         <%= f.radio_button :ques_five, '1' %>
         <%= f.label :ques_five, "はい(臨機応変に対応可能)", {value: 1, style: "display: inline-block;", class:"fs-5"} %>
         <%= f.radio_button :ques_five, '0' %>
